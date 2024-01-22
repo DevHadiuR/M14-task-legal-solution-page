@@ -1,40 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Legal Solution</title>
     <!-- tailwind and daisy ui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- google fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-<style>
-.font-ebgaramond{
-    font-family: 'EB Garamond', serif;
-}
-.font-poppins{
-    font-family: 'Poppins', sans-serif;
-}
-</style>
-<!-- tailwind custom colors -->
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
+    <style>
+      .font-ebgaramond {
+        font-family: "EB Garamond", serif;
       }
-    }
-  </script>
-
-</head>
-<body>
-    
-</body>
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+    <!-- tailwind custom colors -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "bg-common": "#B68C5A",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="container mx-auto px-4 md:px-10 lg:px-44">
+      <nav class="my-16">
+        <div class="flex items-center justify-between">
+          <div class="">
+            <img src="legal-solution-resources-main/images/logo2.png" alt="" />
+          </div>
+          <div class=" ">
+            <ul class="flex flex-col md:flex-row gap-6 font-poppins opacity-70">
+              <li><a>Home</a></li>
+              <li>
+                <a>Services</a>
+              </li>
+              <li><a>Cases</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <button class="text-white bg-bg-common py-4 px-7 rounded-md">
+              Free Consultation
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="hero h-auto py-20 lg:px-24 rounded-lg"
+        style="
+          background-image: url(./legal-solution-resources-main/images/banner.png);
+        "
+      >
+        <div class="bg-gradient-to-r from-[#111] to-[#111111]"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="">
+            <h1
+              class="mb-5 text-4xl md:text-7xl font-extrabold font-ebgaramond text-white"
+            >
+              We Provide Effective <br />
+              Legal Solutions
+            </h1>
+            <p class="mb-5 text-center">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <input
+              type=" text"
+              placeholder="Search your services"
+              class="py-3 w-40 mb-4 md:w-96 pl-4 rounded-xl text-[#A0A0A0]"
+            />
+            <button class="btn bg-bg-common text-white border-none">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
